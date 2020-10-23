@@ -17,6 +17,8 @@
         android:layout_alignParentStart="true" />
 
     <CheckBox
+        android:minWidth="0dp"
+        android:minHeight="0dp"
         android:id="@+id/alertCheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
