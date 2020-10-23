@@ -36,6 +36,7 @@ public class SingleSpinnerSearch extends androidx.appcompat.widget.AppCompatSpin
 	private List<KeyPairBoolData> items;
 	private String defaultText = "";
 	private String spinnerTitle = "";
+	private String clearText = "Clear";
 	private String emptyTitle = "Not Found!";
 	private String searchHint = "Type to search";
 	private SingleSpinnerListener listener;
@@ -177,7 +178,7 @@ public class SingleSpinnerSearch extends androidx.appcompat.widget.AppCompatSpin
 			editText.setVisibility(GONE);
 		}
 
-		builder.setPositiveButton("Clear", (dialog, which) -> {
+		builder.setPositiveButton(clearText, (dialog, which) -> {
 
 			for (int i = 0; i < items.size(); i++) {
 				items.get(i).setSelected(false);
@@ -216,6 +217,10 @@ public class SingleSpinnerSearch extends androidx.appcompat.widget.AppCompatSpin
 
 	public void setEmptyTitle(String emptyTitle) {
 		this.emptyTitle = emptyTitle;
+	}
+	
+	public void setClearText(String text) {
+		this.clearText = text;
 	}
 
 	public void setSearchHint(String searchHint) {
