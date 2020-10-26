@@ -76,9 +76,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 				highlightSelected = a.getBoolean(attr, false);
 			} else if (attr == R.styleable.MultiSpinnerSearch_highlightColor) {
 				highlightColor = a.getColor(attr, ContextCompat.getColor(getContext(), R.color.list_selected));
-			} else if (attr == R.styleable.MultiSpinnerSearch_textColor) {
-				textColor = a.getColor(attr, Color.GRAY);
-			}else if (attr == R.styleable.MultiSpinnerSearch_clearText){
+			} else if (attr == R.styleable.MultiSpinnerSearch_clearText){
 				this.setClearText(a.getString(attr));
 			}
 		}
