@@ -12,7 +12,7 @@
 		android:autofillHints="@string/type_to_search"
 		android:hint="@string/type_to_search"
 		android:inputType="text"
-		android:padding="5dp">
+		android:padding="10dp">
 
 		<requestFocus />
 	</EditText>
