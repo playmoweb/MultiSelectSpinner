@@ -10,6 +10,9 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
@@ -17,18 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08fe6335-ddf0-4e74-b364-7a7bdf45ce38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/androidbuts/sample/MainDataBindingActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/res/layout/activity_main_data_binding.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/KeyPairBoolData.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/KeyPairBoolData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="HA13VF5Q" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3_API_27]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -68,7 +70,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -77,11 +78,16 @@
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="New_Device_1_API_28" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-28T05:04:17.701Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android-custom-view/Users/valentinbrosseau/projects/MultiSelectSpinner/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java_SELECTED" value="MultiSpinnerSearch" />
+    <property name="android-custom-view/Users/valentinbrosseau/projects/MultiSelectSpinner/library/src/main/java/com/androidbuts/multispinnerfilter/SingleSpinnerSearch.java_SELECTED" value="SingleSpinnerSearch" />
     <property name="device.picker.selection" value="90ffee42" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="multi-representation-preview/Users/valentinbrosseau/projects/MultiSelectSpinner/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java_selected" value="Custom views" />
+    <property name="multi-representation-preview/Users/valentinbrosseau/projects/MultiSelectSpinner/library/src/main/java/com/androidbuts/multispinnerfilter/SingleSpinnerSearch.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -96,15 +102,15 @@
     <key name="android.template.-1222476902">
       <recent name="com.androidbuts.sample" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hussein.yassine\AndroidStudioProjects\Github Modules\MultiSelectSpinner\library\src\main\res" />
-      <recent name="C:\Users\hussein.yassine\AndroidStudioProjects\Github Modules\MultiSelectSpinner\sample\src\main\res\values-v14" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\Others\MultiSelectSpinner\sample\src\main\res\drawable" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.androidbuts.multispinnerfilter" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Projects\Others\MultiSelectSpinner\sample\src\main\res\drawable" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hussein.yassine\AndroidStudioProjects\Github Modules\MultiSelectSpinner\library\src\main\res" />
+      <recent name="C:\Users\hussein.yassine\AndroidStudioProjects\Github Modules\MultiSelectSpinner\sample\src\main\res\values-v14" />
     </key>
   </component>
   <component name="RunManager">
@@ -120,12 +126,13 @@
       </method>
     </configuration>
     <configuration name="sample" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="sample" />
+      <module name="MultiSelectSpinner.sample" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -161,11 +168,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sampled (Java)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -212,13 +224,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dynamic Change text of Filter Hint &quot;Type Search&quot; and text of &quot;Not Found&quot;" />
@@ -333,10 +344,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="472" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1601558913831" />
-    <state width="300" height="109" key="javadoc.popup.new" timestamp="1603259127794">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="534" height="165" key="javadoc.popup.new" timestamp="1603727945452">
+      <screen x="0" y="23" width="2560" height="1361" />
     </state>
     <state width="300" height="109" key="javadoc.popup.new/0.0.1440.900/1440.-124.1920.1080@0.0.1440.900" timestamp="1603259127794" />
+    <state width="534" height="165" key="javadoc.popup.new/0.23.2560.1361@0.23.2560.1361" timestamp="1603727945452" />
     <state x="339" y="16" width="672" height="676" key="search.everywhere.popup" timestamp="1599816957188">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -347,37 +359,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>381</line>
+          <line>382</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>383</line>
+          <line>384</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>384</line>
+          <line>385</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>385</line>
+          <line>386</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>386</line>
+          <line>387</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>387</line>
+          <line>388</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/library/src/main/java/com/androidbuts/multispinnerfilter/MultiSpinnerSearch.java</url>
-          <line>388</line>
+          <line>389</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
