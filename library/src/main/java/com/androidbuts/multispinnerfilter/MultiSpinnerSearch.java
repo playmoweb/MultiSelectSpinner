@@ -39,7 +39,6 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 
 	private boolean highlightSelected = false;
 	private int highlightColor = ContextCompat.getColor(getContext(), R.color.list_selected);
-	private int textColor = Color.GRAY;
 	private int limit = -1;
 	private int selected = 0;
 	private String defaultText = "";
@@ -397,7 +396,6 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 			});
 
 			if (data.isSelected()) {
-				holder.textView.setTextColor(textColor);
 				if (highlightSelected) {
 					holder.textView.setTypeface(null, Typeface.BOLD);
 					convertView.setBackgroundColor(highlightColor);
