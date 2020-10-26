@@ -281,8 +281,8 @@ public class SingleSpinnerSearch extends androidx.appcompat.widget.AppCompatSpin
 
 			if (data.isSelected()) {
 				holder.textView.setTypeface(null, Typeface.BOLD);
-				holder.textView.setTextColor(Color.WHITE);
-				convertView.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.list_selected));
+				holder.textView.setTextColor(ContextCompat.getColor(getContext(), R.color.list_selected));
+				convertView.setBackgroundColor(ContextCompat.getColor(getContext(), color));
 			} else {
 				holder.textView.setTextColor(Color.DKGRAY);
 				holder.textView.setTypeface(null, Typeface.NORMAL);
