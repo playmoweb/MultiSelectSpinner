@@ -411,7 +411,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 
                 holder.checkBox.setEnabled(true);
                 holder.textView.setAlpha(1f);
-            } else if (data.isDisabled()) {
+            } else if (data.isDisabled() && data.isSelectable()) {
                 convertView.setOnClickListener(v -> {
                     // DO NOTHING
                 });
