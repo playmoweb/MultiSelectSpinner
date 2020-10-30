@@ -148,6 +148,10 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
         return selectedItemsIds;
     }
 
+    public void notifyDataSetChanged(){
+        adapter.notifyDataSetChanged();
+    }
+
     @Override
     public void onCancel(DialogInterface dialog) {
         // refresh text on spinner
