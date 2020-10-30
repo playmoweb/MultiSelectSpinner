@@ -51,6 +51,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
     private boolean isShowSelectAllButton = false;
 
     private MultiSpinnerListener listener;
+    private MultiSpinnerListenerLiveChange liveListenerChange;
     private LimitExceedListener limitListener;
 
     private MyAdapter adapter;
@@ -121,6 +122,10 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
         this.limit = limit;
         this.limitListener = listener;
         isShowSelectAllButton = false; // if its limited, select all default false.
+    }
+
+    public void setLiveListenerChange(MultiSpinnerListenerLiveChange listener) {
+        this.liveListenerChange = listener;
     }
 
     public List<KeyPairBoolData> getSelectedItems() {
@@ -394,6 +399,10 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
                     data.setSelected(!data.isSelected());
                     //Log.i(TAG, "On Click Selected Item : " + data.getName() + " : " + data.isSelected());
                     notifyDataSetChanged();
+
+                    if(liveListenerChange != null){
+                        liveListenerChange.onLiveChange();
+                    }
                 });
                 if (data.isSelected()) {
                     if (highlightSelected) {
