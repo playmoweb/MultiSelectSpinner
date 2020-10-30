@@ -374,7 +374,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
             holder.textView.setText(data.getName());
             holder.checkBox.setChecked(data.isSelected());
 
-            if (data.isSelectable()) {
+            if (data.isSelectable() && !data.isDisabled()) {
                 convertView.setOnClickListener(v -> {
                     if (data.isSelected()) { // deselect
                         selected--;
@@ -395,7 +395,6 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
                     //Log.i(TAG, "On Click Selected Item : " + data.getName() + " : " + data.isSelected());
                     notifyDataSetChanged();
                 });
-
                 if (data.isSelected()) {
                     if (highlightSelected) {
                         holder.textView.setTypeface(null, Typeface.BOLD);
@@ -409,10 +408,21 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
                 }
                 holder.checkBox.setTag(holder);
                 holder.checkBox.setVisibility(View.VISIBLE);
-            } else {
-                convertView.setOnClickListener( v -> {
+
+                holder.checkBox.setEnabled(true);
+                holder.textView.setAlpha(1f);
+            } else if (data.isDisabled()) {
+                convertView.setOnClickListener(v -> {
                     // DO NOTHING
                 });
+
+                holder.checkBox.setEnabled(false);
+                holder.textView.setAlpha(0.5f);
+            } else {
+                convertView.setOnClickListener(v -> {
+                    // DO NOTHING
+                });
+                holder.textView.setAlpha(1f);
                 holder.textView.setTypeface(null, Typeface.BOLD);
                 convertView.setBackgroundColor(ContextCompat.getColor(getContext(), background));
 
@@ -430,7 +440,6 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
                 @SuppressWarnings("unchecked")
                 @Override
                 protected void publishResults(CharSequence constraint, FilterResults results) {
-
                     arrayList = (List<KeyPairBoolData>) results.values; // has the filtered values
                     notifyDataSetChanged();  // notifies the data with new filtered values
                 }
@@ -456,9 +465,10 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
                         constraint = constraint.toString().toLowerCase();
                         for (int i = 0; i < mOriginalValues.size(); i++) {
                             //Log.i(TAG, "Filter : " + mOriginalValues.get(i).getName() + " -> " + mOriginalValues.get(i).isSelected());
-                            String data = mOriginalValues.get(i).getName();
-                            if (data.toLowerCase().contains(constraint.toString())) {
-                                FilteredArrList.add(mOriginalValues.get(i));
+                            if (mOriginalValues.get(i).isSelectable() && !mOriginalValues.get(i).isDisabled()) {
+                                if (mOriginalValues.get(i).getName().toLowerCase().contains(constraint.toString())) {
+                                    FilteredArrList.add(mOriginalValues.get(i));
+                                }
                             }
                         }
                         // set the Filtered result to return

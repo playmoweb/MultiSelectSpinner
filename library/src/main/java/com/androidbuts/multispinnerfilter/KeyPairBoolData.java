@@ -5,6 +5,7 @@ public class KeyPairBoolData {
     private String name;
     private boolean isSelected = false;
     private boolean isSelectable = true;
+    private boolean isDisabled = false;
     private Object object;
 
     public Object getObject() {
@@ -45,5 +46,13 @@ public class KeyPairBoolData {
 
     public void setSelectable(boolean selectable) {
         isSelectable = selectable;
+    }
+
+    public boolean isDisabled() {
+        return isDisabled;
+    }
+
+    public void setDisabled(boolean disabled) {
+        isDisabled = disabled;
     }
 }
