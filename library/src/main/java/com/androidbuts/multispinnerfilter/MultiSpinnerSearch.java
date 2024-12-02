@@ -182,17 +182,7 @@ public class MultiSpinnerSearch extends AppCompatSpinner implements OnCancelList
 
         listener.onItemsSelected(selectedData);
 
-        /**
-         * To hide dropdown which is already opened at the time of performClick...
-         * This code will hide automatically and no need to tap by user.
-         */
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Instrumentation inst = new Instrumentation();
-                inst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
-            }
-        }).start();
+        this.onDetachedFromWindow();
     }
 
     @Override
